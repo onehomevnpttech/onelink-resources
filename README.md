@@ -1,2 +1,2 @@
 # onelink-resources
-Lưu trữ ảnh thiết bị được tích hợp trong ứng dụng ONE Link
+Kho lưu trữ ảnh thiết bị được tích hợp trong ứng dụng ONE Link
