@@ -1,0 +1,4149 @@
+{
+    "ver": "1.0",
+    "trustDomains": [
+        "vnpt.vn",
+        "vnpt-technology.vn"
+    ],
+    "speedtestService": "https://speedtest.vn/",
+    "baseGroupFeatures": [
+        "config",
+        "troubleshoot",
+        "control",
+        "schedule"
+    ],
+    "baseFeatures": {
+        "topology": {},
+        "speedtest": {},
+        "ssid": {
+            "sort": 5,
+            "destination": "/wifi_setting",
+            "group": "config",
+            "bandTypes": [
+                "Wireless 2.4G",
+                "Wireless 5G"
+            ]
+        },
+        "reboot": {
+            "sort": 2,
+            "destination": "/reboot",
+            "group": "control"
+        },
+        "reset": {
+            "sort": 3,
+            "destination": "/factory_reset",
+            "group": "control"
+        },
+        "wan": {
+            "sort": 1,
+            "destination": "/wan_setting",
+            "group": "config",
+            "wanTypes": {
+                "ont": [
+                    "PPPoE",
+                    "IPoE Dynamic",
+                    "Bridge"
+                ],
+                "mesh": [
+                    "PPPoE",
+                    "IPoE Dynamic",
+                    "IPoE Static",
+                    "L2TP",
+                    "PPTP",
+                    "Bridge"
+                ]
+            },
+            "vlanId": {
+                "min": 3,
+                "max": 4000,
+                "excepts": [
+                    88
+                ]
+            },
+            "ipVersions": [
+                "IPv4",
+                "IPv6",
+                "Dualstack"
+            ],
+            "ipv6Types": [
+                {
+                    "id": "0",
+                    "name": "Auto"
+                },
+                {
+                    "id": "1",
+                    "name": "Stateful Only"
+                },
+                {
+                    "id": "2",
+                    "name": "Stateless Only"
+                }
+            ],
+            "subnetMasks": [
+                "255.255.255.0",
+                "255.255.0.0",
+                "255.0.0.0"
+            ]
+        },
+        "lan": {
+            "sort": 4,
+            "destination": "/lan_setting",
+            "group": "config",
+            "subnetMasks": [
+                "255.255.255.0",
+                "255.255.0.0",
+                "255.0.0.0"
+            ]
+        },
+        "radio": {
+            "sort": 6,
+            "destination": "/radio_setting",
+            "group": "config",
+            "bandwidths": {
+                "ont": {
+                    "2.4g": [
+                        {
+                            "id": "0",
+                            "name": "20MHz",
+                            "channels": [
+                                {
+                                    "id": "0",
+                                    "name": "Auto"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "1"
+                                },
+                                {
+                                    "id": "2",
+                                    "name": "2"
+                                },
+                                {
+                                    "id": "3",
+                                    "name": "3"
+                                },
+                                {
+                                    "id": "4",
+                                    "name": "4"
+                                },
+                                {
+                                    "id": "5",
+                                    "name": "5"
+                                },
+                                {
+                                    "id": "6",
+                                    "name": "6"
+                                },
+                                {
+                                    "id": "7",
+                                    "name": "7"
+                                },
+                                {
+                                    "id": "8",
+                                    "name": "8"
+                                },
+                                {
+                                    "id": "9",
+                                    "name": "9"
+                                },
+                                {
+                                    "id": "10",
+                                    "name": "10"
+                                },
+                                {
+                                    "id": "11",
+                                    "name": "11"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1",
+                            "name": "40MHz",
+                            "channels": [
+                                {
+                                    "id": "0",
+                                    "name": "Auto"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "1"
+                                },
+                                {
+                                    "id": "2",
+                                    "name": "2"
+                                },
+                                {
+                                    "id": "3",
+                                    "name": "3"
+                                },
+                                {
+                                    "id": "4",
+                                    "name": "4"
+                                },
+                                {
+                                    "id": "5",
+                                    "name": "5"
+                                },
+                                {
+                                    "id": "6",
+                                    "name": "6"
+                                },
+                                {
+                                    "id": "7",
+                                    "name": "7"
+                                },
+                                {
+                                    "id": "8",
+                                    "name": "8"
+                                },
+                                {
+                                    "id": "9",
+                                    "name": "9"
+                                },
+                                {
+                                    "id": "10",
+                                    "name": "10"
+                                },
+                                {
+                                    "id": "11",
+                                    "name": "11"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2",
+                            "name": "20/40MHz",
+                            "channels": [
+                                {
+                                    "id": "0",
+                                    "name": "Auto"
+                                },
+                                {
+                                    "id": "1",
+                                    "name": "1"
+                                },
+                                {
+                                    "id": "2",
+                                    "name": "2"
+                                },
+                                {
+                                    "id": "3",
+                                    "name": "3"
+                                },
+                                {
+                                    "id": "4",
+                                    "name": "4"
+                                },
+                                {
+                                    "id": "5",
+                                    "name": "5"
+                                },
+                                {
+                                    "id": "6",
+                                    "name": "6"
+                                },
+                                {
+                                    "id": "7",
+                                    "name": "7"
+                                },
+                                {
+                                    "id": "8",
+                                    "name": "8"
+                                },
+                                {
+                                    "id": "9",
+                                    "name": "9"
+                                },
+                                {
+                                    "id": "10",
+                                    "name": "10"
+                                },
+                                {
+                                    "id": "11",
+                                    "name": "11"
+                                }
+                            ]
+                        }
+                    ],
+                    "5g": [
+                        {
+                            "id": "0",
+                            "name": "20MHz"
+                        },
+                        {
+                            "id": "1",
+                            "name": "40MHz"
+                        },
+                        {
+                            "id": "2",
+                            "name": "20/40MHz"
+                        },
+                        {
+                            "id": "3",
+                            "name": "20/40/40MHz"
+                        },
+                        {
+                            "id": "4",
+                            "name": "20/40/80MHz"
+                        },
+                        {
+                            "id": "5",
+                            "name": "20/40/160MHz"
+                        }
+                    ]
+                },
+                "mesh": {
+                    "2.4g": [
+                        {
+                            "id": "0",
+                            "name": "20MHz"
+                        },
+                        {
+                            "id": "1",
+                            "name": "40MHz"
+                        },
+                        {
+                            "id": "2",
+                            "name": "20/40MHz"
+                        }
+                    ],
+                    "5g": [
+                        {
+                            "id": "0",
+                            "name": "20MHz",
+                            "channels": [
+                                {
+                                    "id": "0",
+                                    "name": "Auto"
+                                },
+                                {
+                                    "id": "36",
+                                    "name": "36"
+                                },
+                                {
+                                    "id": "40",
+                                    "name": "40"
+                                },
+                                {
+                                    "id": "44",
+                                    "name": "44"
+                                },
+                                {
+                                    "id": "48",
+                                    "name": "48"
+                                },
+                                {
+                                    "id": "52",
+                                    "name": "52"
+                                },
+                                {
+                                    "id": "56",
+                                    "name": "56"
+                                },
+                                {
+                                    "id": "60",
+                                    "name": "60"
+                                },
+                                {
+                                    "id": "64",
+                                    "name": "64"
+                                },
+                                {
+                                    "id": "100",
+                                    "name": "100"
+                                },
+                                {
+                                    "id": "104",
+                                    "name": "104"
+                                },
+                                {
+                                    "id": "108",
+                                    "name": "108"
+                                },
+                                {
+                                    "id": "112",
+                                    "name": "112"
+                                },
+                                {
+                                    "id": "116",
+                                    "name": "116"
+                                },
+                                {
+                                    "id": "120",
+                                    "name": "120"
+                                },
+                                {
+                                    "id": "124",
+                                    "name": "124"
+                                },
+                                {
+                                    "id": "128",
+                                    "name": "128"
+                                },
+                                {
+                                    "id": "132",
+                                    "name": "132"
+                                },
+                                {
+                                    "id": "136",
+                                    "name": "136"
+                                },
+                                {
+                                    "id": "140",
+                                    "name": "140"
+                                },
+                                {
+                                    "id": "144",
+                                    "name": "144"
+                                },
+                                {
+                                    "id": "149",
+                                    "name": "149"
+                                },
+                                {
+                                    "id": "153",
+                                    "name": "153"
+                                },
+                                {
+                                    "id": "157",
+                                    "name": "157"
+                                },
+                                {
+                                    "id": "161",
+                                    "name": "161"
+                                },
+                                {
+                                    "id": "165",
+                                    "name": "165"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1",
+                            "name": "40MHz",
+                            "channels": [
+                                {
+                                    "id": "0",
+                                    "name": "Auto"
+                                },
+                                {
+                                    "id": "36",
+                                    "name": "36"
+                                },
+                                {
+                                    "id": "40",
+                                    "name": "40"
+                                },
+                                {
+                                    "id": "44",
+                                    "name": "44"
+                                },
+                                {
+                                    "id": "48",
+                                    "name": "48"
+                                },
+                                {
+                                    "id": "52",
+                                    "name": "52"
+                                },
+                                {
+                                    "id": "56",
+                                    "name": "56"
+                                },
+                                {
+                                    "id": "60",
+                                    "name": "60"
+                                },
+                                {
+                                    "id": "64",
+                                    "name": "64"
+                                },
+                                {
+                                    "id": "100",
+                                    "name": "100"
+                                },
+                                {
+                                    "id": "104",
+                                    "name": "104"
+                                },
+                                {
+                                    "id": "108",
+                                    "name": "108"
+                                },
+                                {
+                                    "id": "112",
+                                    "name": "112"
+                                },
+                                {
+                                    "id": "116",
+                                    "name": "116"
+                                },
+                                {
+                                    "id": "120",
+                                    "name": "120"
+                                },
+                                {
+                                    "id": "124",
+                                    "name": "124"
+                                },
+                                {
+                                    "id": "128",
+                                    "name": "128"
+                                },
+                                {
+                                    "id": "132",
+                                    "name": "132"
+                                },
+                                {
+                                    "id": "136",
+                                    "name": "136"
+                                },
+                                {
+                                    "id": "140",
+                                    "name": "140"
+                                },
+                                {
+                                    "id": "144",
+                                    "name": "144"
+                                },
+                                {
+                                    "id": "149",
+                                    "name": "149"
+                                },
+                                {
+                                    "id": "153",
+                                    "name": "153"
+                                },
+                                {
+                                    "id": "157",
+                                    "name": "157"
+                                },
+                                {
+                                    "id": "161",
+                                    "name": "161"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3",
+                            "name": "80MHz",
+                            "channels": [
+                                {
+                                    "id": "0",
+                                    "name": "Auto"
+                                },
+                                {
+                                    "id": "36",
+                                    "name": "36"
+                                },
+                                {
+                                    "id": "40",
+                                    "name": "40"
+                                },
+                                {
+                                    "id": "44",
+                                    "name": "44"
+                                },
+                                {
+                                    "id": "48",
+                                    "name": "48"
+                                },
+                                {
+                                    "id": "52",
+                                    "name": "52"
+                                },
+                                {
+                                    "id": "56",
+                                    "name": "56"
+                                },
+                                {
+                                    "id": "60",
+                                    "name": "60"
+                                },
+                                {
+                                    "id": "64",
+                                    "name": "64"
+                                },
+                                {
+                                    "id": "100",
+                                    "name": "100"
+                                },
+                                {
+                                    "id": "104",
+                                    "name": "104"
+                                },
+                                {
+                                    "id": "108",
+                                    "name": "108"
+                                },
+                                {
+                                    "id": "112",
+                                    "name": "112"
+                                },
+                                {
+                                    "id": "116",
+                                    "name": "116"
+                                },
+                                {
+                                    "id": "120",
+                                    "name": "120"
+                                },
+                                {
+                                    "id": "124",
+                                    "name": "124"
+                                },
+                                {
+                                    "id": "128",
+                                    "name": "128"
+                                },
+                                {
+                                    "id": "132",
+                                    "name": "132"
+                                },
+                                {
+                                    "id": "136",
+                                    "name": "136"
+                                },
+                                {
+                                    "id": "140",
+                                    "name": "140"
+                                },
+                                {
+                                    "id": "144",
+                                    "name": "144"
+                                },
+                                {
+                                    "id": "149",
+                                    "name": "149"
+                                },
+                                {
+                                    "id": "153",
+                                    "name": "153"
+                                },
+                                {
+                                    "id": "157",
+                                    "name": "157"
+                                },
+                                {
+                                    "id": "161",
+                                    "name": "161"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "4",
+                            "name": "160MHz",
+                            "channels": [
+                                {
+                                    "id": "0",
+                                    "name": "Auto"
+                                },
+                                {
+                                    "id": "36",
+                                    "name": "36"
+                                },
+                                {
+                                    "id": "40",
+                                    "name": "40"
+                                },
+                                {
+                                    "id": "44",
+                                    "name": "44"
+                                },
+                                {
+                                    "id": "48",
+                                    "name": "48"
+                                },
+                                {
+                                    "id": "52",
+                                    "name": "52"
+                                },
+                                {
+                                    "id": "56",
+                                    "name": "56"
+                                },
+                                {
+                                    "id": "60",
+                                    "name": "60"
+                                },
+                                {
+                                    "id": "64",
+                                    "name": "64"
+                                },
+                                {
+                                    "id": "100",
+                                    "name": "100"
+                                },
+                                {
+                                    "id": "104",
+                                    "name": "104"
+                                },
+                                {
+                                    "id": "108",
+                                    "name": "108"
+                                },
+                                {
+                                    "id": "112",
+                                    "name": "112"
+                                },
+                                {
+                                    "id": "116",
+                                    "name": "116"
+                                },
+                                {
+                                    "id": "120",
+                                    "name": "120"
+                                },
+                                {
+                                    "id": "124",
+                                    "name": "124"
+                                },
+                                {
+                                    "id": "128",
+                                    "name": "128"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "transmitPower": [
+                "5",
+                "12",
+                "22",
+                "40",
+                "75",
+                "100"
+            ],
+            "channels": {
+                "2.4g": [
+                    {
+                        "id": "0",
+                        "name": "Auto"
+                    },
+                    {
+                        "id": "1",
+                        "name": "1"
+                    },
+                    {
+                        "id": "2",
+                        "name": "2"
+                    },
+                    {
+                        "id": "3",
+                        "name": "3"
+                    },
+                    {
+                        "id": "4",
+                        "name": "4"
+                    },
+                    {
+                        "id": "5",
+                        "name": "5"
+                    },
+                    {
+                        "id": "6",
+                        "name": "6"
+                    },
+                    {
+                        "id": "7",
+                        "name": "7"
+                    },
+                    {
+                        "id": "8",
+                        "name": "8"
+                    },
+                    {
+                        "id": "9",
+                        "name": "9"
+                    },
+                    {
+                        "id": "10",
+                        "name": "10"
+                    },
+                    {
+                        "id": "11",
+                        "name": "11"
+                    }
+                ],
+                "5g": [
+                    {
+                        "id": "0",
+                        "name": "Auto"
+                    },
+                    {
+                        "id": "36",
+                        "name": "36"
+                    },
+                    {
+                        "id": "40",
+                        "name": "40"
+                    },
+                    {
+                        "id": "44",
+                        "name": "44"
+                    },
+                    {
+                        "id": "48",
+                        "name": "48"
+                    },
+                    {
+                        "id": "52",
+                        "name": "52"
+                    },
+                    {
+                        "id": "56",
+                        "name": "56"
+                    },
+                    {
+                        "id": "60",
+                        "name": "60"
+                    },
+                    {
+                        "id": "64",
+                        "name": "64"
+                    },
+                    {
+                        "id": "100",
+                        "name": "100"
+                    },
+                    {
+                        "id": "104",
+                        "name": "104"
+                    },
+                    {
+                        "id": "108",
+                        "name": "108"
+                    },
+                    {
+                        "id": "112",
+                        "name": "112"
+                    },
+                    {
+                        "id": "116",
+                        "name": "116"
+                    },
+                    {
+                        "id": "120",
+                        "name": "120"
+                    },
+                    {
+                        "id": "124",
+                        "name": "124"
+                    },
+                    {
+                        "id": "128",
+                        "name": "128"
+                    },
+                    {
+                        "id": "132",
+                        "name": "132"
+                    },
+                    {
+                        "id": "136",
+                        "name": "136"
+                    },
+                    {
+                        "id": "140",
+                        "name": "140"
+                    },
+                    {
+                        "id": "144",
+                        "name": "144"
+                    },
+                    {
+                        "id": "149",
+                        "name": "149"
+                    },
+                    {
+                        "id": "153",
+                        "name": "153"
+                    },
+                    {
+                        "id": "157",
+                        "name": "157"
+                    },
+                    {
+                        "id": "161",
+                        "name": "161"
+                    },
+                    {
+                        "id": "165",
+                        "name": "165"
+                    }
+                ]
+            }
+        },
+        "portFwd": {
+            "sort": 7,
+            "destination": "/port_forward_setting",
+            "group": "config",
+            "protocols": [
+                "TCP",
+                "UDP",
+                "ALL"
+            ]
+        },
+        "ddns": {
+            "sort": 8,
+            "destination": "/ddns_setting",
+            "group": "config",
+            "providers": [
+                "www.no-ip.com",
+                "www.dyndns.org",
+                "www.tzo.net",
+                "www.zoneedit.com",
+                "www.dhs.org",
+                "www.hn.org",
+                "www.ez-ip.net",
+                "www.easydns.com"
+            ]
+        },
+        "diagnostic": {
+            "sort": 9,
+            "destination": "/diagnostic",
+            "group": "troubleshoot"
+        },
+        "optical": {
+            "sort": 10,
+            "destination": "/network_optical",
+            "group": "troubleshoot"
+        },
+        "ota": {
+            "sort": 11,
+            "destination": "/update_firmware",
+            "group": "control"
+        },
+        "voice": {
+            "sort": 16,
+            "destination": "/voice_setting",
+            "group": "config",
+            "regions": [
+                "BEL-BELIGIUM",
+                "BRA-BRAZIL",
+                "CHL-CHILE",
+                "CHN-CHINA",
+                "CZH-CZECH",
+                "DEU-GERMANY",
+                "DNK-DENMARK",
+                "ESP-SPAIN",
+                "ETS-ETSI",
+                "FIN-FINLAND",
+                "FRA-FRANCE",
+                "GBR-UK",
+                "HUN-HUNGARY",
+                "ITA-ITALY",
+                "JPN-JAPAN",
+                "NLD-NETHERLANDS",
+                "USA-NORTHAMERICA",
+                "SWE-SWEDEN",
+                "CHE-SWITZERLAND",
+                "VIE-VIETNAM"
+            ]
+        },
+        "meshConfig": {
+            "sort": 13,
+            "destination": "/mesh_setting",
+            "group": "config"
+        },
+        "passChange": {
+            "sort": 14,
+            "destination": "/change_password"
+        },
+        "interfaceGroup": {
+            "sort": 15,
+            "destination": "/interface_group_setting",
+            "group": "config"
+        },
+        "pon": {
+            "sort": 0,
+            "destination": "/pon_setting",
+            "group": "config",
+            "olt": [
+                "Auto",
+                "Nokia",
+                "Huawei",
+                "ZTE"
+            ]
+        },
+        "addNode": {
+            "destination": "/create_mesh_add_new_node"
+        },
+        "restore": {
+            "sort": 16,
+            "destination": "/restore_config",
+            "group": "control"
+        },
+        "backup": {
+            "sort": 17,
+            "destination": "/file_backup",
+            "group": "control"
+        },
+        "delete": {
+            "sort": 18,
+            "destination": "/delete_device",
+            "group": "control"
+        },
+        "qoe": {
+            "sort": 19,
+            "destination": "/wifi_ratting"
+        },
+        "fingerprinting": {},
+        "rebootSchedule": {
+            "sort": 20,
+            "destination": "/reboot_schedule",
+            "group": "schedule"
+        },
+        "wifiSchedule": {
+            "sort": 21,
+            "destination": "/wifi_schedule",
+            "group": "schedule"
+        },
+        "macFiltering": {
+            "destination": "/mac_filtering"
+        }
+    },
+    "models": {
+        "EW12ST": {
+            "name": "EW12ST",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/ew12st.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "mesh": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "restore",
+                    "backup",
+                    "delete"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "mesh": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "EW30SX": {
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/ew30sx.png",
+            "name": "EW30SX",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "mesh": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "80MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "160MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "restore",
+                    "backup",
+                    "delete"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "mesh": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "80MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "160MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "EW302S": {
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/ew302s.png",
+            "name": "EW302S",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode"
+                ],
+                "overrides": {}
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "qoe",
+                    "fingerprinting"
+                ],
+                "overrides": {}
+            }
+        },
+        "EW303S": {
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/ew302s.png",
+            "name": "EW303S",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode"
+                ],
+                "overrides": {}
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "restore",
+                    "backup",
+                    "delete"
+                ],
+                "overrides": {}
+            }
+        },
+        "EW12SX": {
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/ew12sx.png",
+            "name": "EW12SX",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "mesh": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "restore",
+                    "backup",
+                    "delete"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "mesh": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "W520CE": {
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/w520ce.png",
+            "name": "W520CE",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "mesh": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "restore",
+                    "backup",
+                    "delete"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "mesh": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "EW304S": {
+            "name": "EW304S",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/ew304s.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "portFwd",
+                    "addNode"
+                ],
+                "overrides": {
+                    "wan": {
+                        "wanTypes": {
+                            "mesh": [
+                                "PPPoE",
+                                "IPoE Dynamic",
+                                "IPoE Static",
+                                "Bridge"
+                            ]
+                        },
+                        "vlanId": {
+                            "min": 5,
+                            "max": 4000,
+                            "excepts": [
+                                88
+                            ]
+                        },
+                        "ipVersions": [
+                            "IPv4"
+                        ]
+                    },
+                    "radio": {
+                        "bandwidths": {
+                            "mesh": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz",
+                                        "channels": [
+                                            {
+                                                "id": "0",
+                                                "name": "Auto"
+                                            },
+                                            {
+                                                "id": "36",
+                                                "name": "36"
+                                            },
+                                            {
+                                                "id": "40",
+                                                "name": "40"
+                                            },
+                                            {
+                                                "id": "44",
+                                                "name": "44"
+                                            },
+                                            {
+                                                "id": "48",
+                                                "name": "48"
+                                            },
+                                            {
+                                                "id": "52",
+                                                "name": "52"
+                                            },
+                                            {
+                                                "id": "56",
+                                                "name": "56"
+                                            },
+                                            {
+                                                "id": "60",
+                                                "name": "60"
+                                            },
+                                            {
+                                                "id": "64",
+                                                "name": "64"
+                                            },
+                                            {
+                                                "id": "100",
+                                                "name": "100"
+                                            },
+                                            {
+                                                "id": "104",
+                                                "name": "104"
+                                            },
+                                            {
+                                                "id": "108",
+                                                "name": "108"
+                                            },
+                                            {
+                                                "id": "112",
+                                                "name": "112"
+                                            },
+                                            {
+                                                "id": "116",
+                                                "name": "116"
+                                            },
+                                            {
+                                                "id": "120",
+                                                "name": "120"
+                                            },
+                                            {
+                                                "id": "124",
+                                                "name": "124"
+                                            },
+                                            {
+                                                "id": "128",
+                                                "name": "128"
+                                            },
+                                            {
+                                                "id": "132",
+                                                "name": "132"
+                                            },
+                                            {
+                                                "id": "136",
+                                                "name": "136"
+                                            },
+                                            {
+                                                "id": "140",
+                                                "name": "140"
+                                            },
+                                            {
+                                                "id": "144",
+                                                "name": "144"
+                                            },
+                                            {
+                                                "id": "149",
+                                                "name": "149"
+                                            },
+                                            {
+                                                "id": "153",
+                                                "name": "153"
+                                            },
+                                            {
+                                                "id": "157",
+                                                "name": "157"
+                                            },
+                                            {
+                                                "id": "161",
+                                                "name": "161"
+                                            },
+                                            {
+                                                "id": "165",
+                                                "name": "165"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz",
+                                        "channels": [
+                                            {
+                                                "id": "0",
+                                                "name": "Auto"
+                                            },
+                                            {
+                                                "id": "36",
+                                                "name": "36"
+                                            },
+                                            {
+                                                "id": "40",
+                                                "name": "40"
+                                            },
+                                            {
+                                                "id": "44",
+                                                "name": "44"
+                                            },
+                                            {
+                                                "id": "48",
+                                                "name": "48"
+                                            },
+                                            {
+                                                "id": "52",
+                                                "name": "52"
+                                            },
+                                            {
+                                                "id": "56",
+                                                "name": "56"
+                                            },
+                                            {
+                                                "id": "60",
+                                                "name": "60"
+                                            },
+                                            {
+                                                "id": "64",
+                                                "name": "64"
+                                            },
+                                            {
+                                                "id": "100",
+                                                "name": "100"
+                                            },
+                                            {
+                                                "id": "104",
+                                                "name": "104"
+                                            },
+                                            {
+                                                "id": "108",
+                                                "name": "108"
+                                            },
+                                            {
+                                                "id": "112",
+                                                "name": "112"
+                                            },
+                                            {
+                                                "id": "116",
+                                                "name": "116"
+                                            },
+                                            {
+                                                "id": "120",
+                                                "name": "120"
+                                            },
+                                            {
+                                                "id": "124",
+                                                "name": "124"
+                                            },
+                                            {
+                                                "id": "128",
+                                                "name": "128"
+                                            },
+                                            {
+                                                "id": "132",
+                                                "name": "132"
+                                            },
+                                            {
+                                                "id": "136",
+                                                "name": "136"
+                                            },
+                                            {
+                                                "id": "140",
+                                                "name": "140"
+                                            },
+                                            {
+                                                "id": "144",
+                                                "name": "144"
+                                            },
+                                            {
+                                                "id": "149",
+                                                "name": "149"
+                                            },
+                                            {
+                                                "id": "153",
+                                                "name": "153"
+                                            },
+                                            {
+                                                "id": "157",
+                                                "name": "157"
+                                            },
+                                            {
+                                                "id": "161",
+                                                "name": "161"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "80MHz",
+                                        "channels": [
+                                            {
+                                                "id": "0",
+                                                "name": "Auto"
+                                            },
+                                            {
+                                                "id": "36",
+                                                "name": "36"
+                                            },
+                                            {
+                                                "id": "40",
+                                                "name": "40"
+                                            },
+                                            {
+                                                "id": "44",
+                                                "name": "44"
+                                            },
+                                            {
+                                                "id": "48",
+                                                "name": "48"
+                                            },
+                                            {
+                                                "id": "52",
+                                                "name": "52"
+                                            },
+                                            {
+                                                "id": "56",
+                                                "name": "56"
+                                            },
+                                            {
+                                                "id": "60",
+                                                "name": "60"
+                                            },
+                                            {
+                                                "id": "64",
+                                                "name": "64"
+                                            },
+                                            {
+                                                "id": "100",
+                                                "name": "100"
+                                            },
+                                            {
+                                                "id": "104",
+                                                "name": "104"
+                                            },
+                                            {
+                                                "id": "108",
+                                                "name": "108"
+                                            },
+                                            {
+                                                "id": "112",
+                                                "name": "112"
+                                            },
+                                            {
+                                                "id": "116",
+                                                "name": "116"
+                                            },
+                                            {
+                                                "id": "120",
+                                                "name": "120"
+                                            },
+                                            {
+                                                "id": "124",
+                                                "name": "124"
+                                            },
+                                            {
+                                                "id": "128",
+                                                "name": "128"
+                                            },
+                                            {
+                                                "id": "132",
+                                                "name": "132"
+                                            },
+                                            {
+                                                "id": "136",
+                                                "name": "136"
+                                            },
+                                            {
+                                                "id": "140",
+                                                "name": "140"
+                                            },
+                                            {
+                                                "id": "144",
+                                                "name": "144"
+                                            },
+                                            {
+                                                "id": "149",
+                                                "name": "149"
+                                            },
+                                            {
+                                                "id": "153",
+                                                "name": "153"
+                                            },
+                                            {
+                                                "id": "157",
+                                                "name": "157"
+                                            },
+                                            {
+                                                "id": "161",
+                                                "name": "161"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "160MHz",
+                                        "channels": [
+                                            {
+                                                "id": "0",
+                                                "name": "Auto"
+                                            },
+                                            {
+                                                "id": "36",
+                                                "name": "36"
+                                            },
+                                            {
+                                                "id": "40",
+                                                "name": "40"
+                                            },
+                                            {
+                                                "id": "44",
+                                                "name": "44"
+                                            },
+                                            {
+                                                "id": "48",
+                                                "name": "48"
+                                            },
+                                            {
+                                                "id": "52",
+                                                "name": "52"
+                                            },
+                                            {
+                                                "id": "56",
+                                                "name": "56"
+                                            },
+                                            {
+                                                "id": "60",
+                                                "name": "60"
+                                            },
+                                            {
+                                                "id": "64",
+                                                "name": "64"
+                                            },
+                                            {
+                                                "id": "100",
+                                                "name": "100"
+                                            },
+                                            {
+                                                "id": "104",
+                                                "name": "104"
+                                            },
+                                            {
+                                                "id": "108",
+                                                "name": "108"
+                                            },
+                                            {
+                                                "id": "112",
+                                                "name": "112"
+                                            },
+                                            {
+                                                "id": "116",
+                                                "name": "116"
+                                            },
+                                            {
+                                                "id": "120",
+                                                "name": "120"
+                                            },
+                                            {
+                                                "id": "124",
+                                                "name": "124"
+                                            },
+                                            {
+                                                "id": "128",
+                                                "name": "128"
+                                            },
+                                            {
+                                                "id": "132",
+                                                "name": "132"
+                                            },
+                                            {
+                                                "id": "136",
+                                                "name": "136"
+                                            },
+                                            {
+                                                "id": "140",
+                                                "name": "140"
+                                            },
+                                            {
+                                                "id": "144",
+                                                "name": "144"
+                                            },
+                                            {
+                                                "id": "149",
+                                                "name": "149"
+                                            },
+                                            {
+                                                "id": "153",
+                                                "name": "153"
+                                            },
+                                            {
+                                                "id": "157",
+                                                "name": "157"
+                                            },
+                                            {
+                                                "id": "161",
+                                                "name": "161"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "ota",
+                    "restore",
+                    "backup",
+                    "delete"
+                ],
+                "overrides": {
+                    "wan": {
+                        "wanTypes": {
+                            "mesh": [
+                                "PPPoE",
+                                "IPoE Dynamic",
+                                "IPoE Static",
+                                "Bridge"
+                            ]
+                        },
+                        "vlanId": {
+                            "min": 5,
+                            "max": 4000,
+                            "excepts": [
+                                88
+                            ]
+                        },
+                        "ipVersions": [
+                            "IPv4"
+                        ]
+                    },
+                    "radio": {
+                        "bandwidths": {
+                            "mesh": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz",
+                                        "channels": [
+                                            {
+                                                "id": "0",
+                                                "name": "Auto"
+                                            },
+                                            {
+                                                "id": "36",
+                                                "name": "36"
+                                            },
+                                            {
+                                                "id": "40",
+                                                "name": "40"
+                                            },
+                                            {
+                                                "id": "44",
+                                                "name": "44"
+                                            },
+                                            {
+                                                "id": "48",
+                                                "name": "48"
+                                            },
+                                            {
+                                                "id": "52",
+                                                "name": "52"
+                                            },
+                                            {
+                                                "id": "56",
+                                                "name": "56"
+                                            },
+                                            {
+                                                "id": "60",
+                                                "name": "60"
+                                            },
+                                            {
+                                                "id": "64",
+                                                "name": "64"
+                                            },
+                                            {
+                                                "id": "100",
+                                                "name": "100"
+                                            },
+                                            {
+                                                "id": "104",
+                                                "name": "104"
+                                            },
+                                            {
+                                                "id": "108",
+                                                "name": "108"
+                                            },
+                                            {
+                                                "id": "112",
+                                                "name": "112"
+                                            },
+                                            {
+                                                "id": "116",
+                                                "name": "116"
+                                            },
+                                            {
+                                                "id": "120",
+                                                "name": "120"
+                                            },
+                                            {
+                                                "id": "124",
+                                                "name": "124"
+                                            },
+                                            {
+                                                "id": "128",
+                                                "name": "128"
+                                            },
+                                            {
+                                                "id": "132",
+                                                "name": "132"
+                                            },
+                                            {
+                                                "id": "136",
+                                                "name": "136"
+                                            },
+                                            {
+                                                "id": "140",
+                                                "name": "140"
+                                            },
+                                            {
+                                                "id": "144",
+                                                "name": "144"
+                                            },
+                                            {
+                                                "id": "149",
+                                                "name": "149"
+                                            },
+                                            {
+                                                "id": "153",
+                                                "name": "153"
+                                            },
+                                            {
+                                                "id": "157",
+                                                "name": "157"
+                                            },
+                                            {
+                                                "id": "161",
+                                                "name": "161"
+                                            },
+                                            {
+                                                "id": "165",
+                                                "name": "165"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz",
+                                        "channels": [
+                                            {
+                                                "id": "0",
+                                                "name": "Auto"
+                                            },
+                                            {
+                                                "id": "36",
+                                                "name": "36"
+                                            },
+                                            {
+                                                "id": "40",
+                                                "name": "40"
+                                            },
+                                            {
+                                                "id": "44",
+                                                "name": "44"
+                                            },
+                                            {
+                                                "id": "48",
+                                                "name": "48"
+                                            },
+                                            {
+                                                "id": "52",
+                                                "name": "52"
+                                            },
+                                            {
+                                                "id": "56",
+                                                "name": "56"
+                                            },
+                                            {
+                                                "id": "60",
+                                                "name": "60"
+                                            },
+                                            {
+                                                "id": "64",
+                                                "name": "64"
+                                            },
+                                            {
+                                                "id": "100",
+                                                "name": "100"
+                                            },
+                                            {
+                                                "id": "104",
+                                                "name": "104"
+                                            },
+                                            {
+                                                "id": "108",
+                                                "name": "108"
+                                            },
+                                            {
+                                                "id": "112",
+                                                "name": "112"
+                                            },
+                                            {
+                                                "id": "116",
+                                                "name": "116"
+                                            },
+                                            {
+                                                "id": "120",
+                                                "name": "120"
+                                            },
+                                            {
+                                                "id": "124",
+                                                "name": "124"
+                                            },
+                                            {
+                                                "id": "128",
+                                                "name": "128"
+                                            },
+                                            {
+                                                "id": "132",
+                                                "name": "132"
+                                            },
+                                            {
+                                                "id": "136",
+                                                "name": "136"
+                                            },
+                                            {
+                                                "id": "140",
+                                                "name": "140"
+                                            },
+                                            {
+                                                "id": "144",
+                                                "name": "144"
+                                            },
+                                            {
+                                                "id": "149",
+                                                "name": "149"
+                                            },
+                                            {
+                                                "id": "153",
+                                                "name": "153"
+                                            },
+                                            {
+                                                "id": "157",
+                                                "name": "157"
+                                            },
+                                            {
+                                                "id": "161",
+                                                "name": "161"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "80MHz",
+                                        "channels": [
+                                            {
+                                                "id": "0",
+                                                "name": "Auto"
+                                            },
+                                            {
+                                                "id": "36",
+                                                "name": "36"
+                                            },
+                                            {
+                                                "id": "40",
+                                                "name": "40"
+                                            },
+                                            {
+                                                "id": "44",
+                                                "name": "44"
+                                            },
+                                            {
+                                                "id": "48",
+                                                "name": "48"
+                                            },
+                                            {
+                                                "id": "52",
+                                                "name": "52"
+                                            },
+                                            {
+                                                "id": "56",
+                                                "name": "56"
+                                            },
+                                            {
+                                                "id": "60",
+                                                "name": "60"
+                                            },
+                                            {
+                                                "id": "64",
+                                                "name": "64"
+                                            },
+                                            {
+                                                "id": "100",
+                                                "name": "100"
+                                            },
+                                            {
+                                                "id": "104",
+                                                "name": "104"
+                                            },
+                                            {
+                                                "id": "108",
+                                                "name": "108"
+                                            },
+                                            {
+                                                "id": "112",
+                                                "name": "112"
+                                            },
+                                            {
+                                                "id": "116",
+                                                "name": "116"
+                                            },
+                                            {
+                                                "id": "120",
+                                                "name": "120"
+                                            },
+                                            {
+                                                "id": "124",
+                                                "name": "124"
+                                            },
+                                            {
+                                                "id": "128",
+                                                "name": "128"
+                                            },
+                                            {
+                                                "id": "132",
+                                                "name": "132"
+                                            },
+                                            {
+                                                "id": "136",
+                                                "name": "136"
+                                            },
+                                            {
+                                                "id": "140",
+                                                "name": "140"
+                                            },
+                                            {
+                                                "id": "144",
+                                                "name": "144"
+                                            },
+                                            {
+                                                "id": "149",
+                                                "name": "149"
+                                            },
+                                            {
+                                                "id": "153",
+                                                "name": "153"
+                                            },
+                                            {
+                                                "id": "157",
+                                                "name": "157"
+                                            },
+                                            {
+                                                "id": "161",
+                                                "name": "161"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "160MHz",
+                                        "channels": [
+                                            {
+                                                "id": "0",
+                                                "name": "Auto"
+                                            },
+                                            {
+                                                "id": "36",
+                                                "name": "36"
+                                            },
+                                            {
+                                                "id": "40",
+                                                "name": "40"
+                                            },
+                                            {
+                                                "id": "44",
+                                                "name": "44"
+                                            },
+                                            {
+                                                "id": "48",
+                                                "name": "48"
+                                            },
+                                            {
+                                                "id": "52",
+                                                "name": "52"
+                                            },
+                                            {
+                                                "id": "56",
+                                                "name": "56"
+                                            },
+                                            {
+                                                "id": "60",
+                                                "name": "60"
+                                            },
+                                            {
+                                                "id": "64",
+                                                "name": "64"
+                                            },
+                                            {
+                                                "id": "100",
+                                                "name": "100"
+                                            },
+                                            {
+                                                "id": "104",
+                                                "name": "104"
+                                            },
+                                            {
+                                                "id": "108",
+                                                "name": "108"
+                                            },
+                                            {
+                                                "id": "112",
+                                                "name": "112"
+                                            },
+                                            {
+                                                "id": "116",
+                                                "name": "116"
+                                            },
+                                            {
+                                                "id": "120",
+                                                "name": "120"
+                                            },
+                                            {
+                                                "id": "124",
+                                                "name": "124"
+                                            },
+                                            {
+                                                "id": "128",
+                                                "name": "128"
+                                            },
+                                            {
+                                                "id": "132",
+                                                "name": "132"
+                                            },
+                                            {
+                                                "id": "136",
+                                                "name": "136"
+                                            },
+                                            {
+                                                "id": "140",
+                                                "name": "140"
+                                            },
+                                            {
+                                                "id": "144",
+                                                "name": "144"
+                                            },
+                                            {
+                                                "id": "149",
+                                                "name": "149"
+                                            },
+                                            {
+                                                "id": "153",
+                                                "name": "153"
+                                            },
+                                            {
+                                                "id": "157",
+                                                "name": "157"
+                                            },
+                                            {
+                                                "id": "161",
+                                                "name": "161"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "GW240-H": {
+            "name": "GW240-H",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/gw240h.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "voice",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "voice",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "fingerprinting",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "GW020-H": {
+            "name": "GW020-H",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/gw020h.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "fingerprinting",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "GW040-H": {
+            "name": "GW040-H",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/gw040h.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "fingerprinting",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "GW040-N": {
+            "name": "GW040-N",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/gw040n.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "GW040-HS": {
+            "name": "GW040-HS",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/gw040hs.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "fingerprinting",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "GW040-NS": {
+            "name": "GW040-NS",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/gw040ns.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    },
+                                    {
+                                        "id": "5",
+                                        "name": "20/40/160MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    },
+                                    {
+                                        "id": "5",
+                                        "name": "20/40/160MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "GW020-N": {
+            "name": "GW020-N",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/gw020n.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "GW240-NS": {
+            "name": "GW240-NS",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/gw040ns.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "voice",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "5",
+                                        "name": "80MHz"
+                                    },
+                                    {
+                                        "id": "6",
+                                        "name": "160MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "voice",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "pon",
+                    "wifiSchedule",
+                    "rebootSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "5",
+                                        "name": "80MHz"
+                                    },
+                                    {
+                                        "id": "6",
+                                        "name": "160MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "XSW240-N": {
+            "name": "XSW240-N",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/xsw250ns.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "XSW050-N": {
+            "name": "XSW050-N",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/xsw050ns.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "XSW250-N": {
+            "name": "XSW250-N",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/xsw250ns.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "voice",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "voice",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "XSW250-NS": {
+            "name": "XSW250-NS",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/xsw250ns.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "voice",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    },
+                                    {
+                                        "id": "5",
+                                        "name": "20/40/160MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "voice",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    },
+                                    {
+                                        "id": "5",
+                                        "name": "20/40/160MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "XSW050-NS": {
+            "name": "XSW050-NS",
+            "image": "https://onehomevnpttech.github.io/onelink-resources/images/xsw050ns.png",
+            "local": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "meshConfig",
+                    "passChange",
+                    "addNode",
+                    "interfaceGroup",
+                    "pon"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    },
+                                    {
+                                        "id": "5",
+                                        "name": "20/40/160MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "remote": {
+                "enabledFeatures": [
+                    "topology",
+                    "speedtest",
+                    "ssid",
+                    "reboot",
+                    "reset",
+                    "wan",
+                    "lan",
+                    "radio",
+                    "portFwd",
+                    "ddns",
+                    "diagnostic",
+                    "optical",
+                    "ota",
+                    "passChange",
+                    "interfaceGroup",
+                    "meshConfig",
+                    "restore",
+                    "backup",
+                    "delete",
+                    "pon",
+                    "rebootSchedule",
+                    "wifiSchedule",
+                    "macFiltering"
+                ],
+                "overrides": {
+                    "radio": {
+                        "bandwidths": {
+                            "ont": {
+                                "5g": [
+                                    {
+                                        "id": "0",
+                                        "name": "20MHz"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "name": "40MHz"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "20/40MHz"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "name": "20/40/40MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/80MHz"
+                                    },
+                                    {
+                                        "id": "4",
+                                        "name": "20/40/160MHz"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "versions": [
+        {
+            "versionName": "2.1.1",
+            "supportedModels": [
+                "EW12ST",
+                "EW30SX"
+            ]
+        },
+        {
+            "versionName": "2.2.0",
+            "supportedModels": [
+                "EW12ST",
+                "EW30SX",
+                "EW12SX",
+                "GW240-H",
+                "GW020-H",
+                "GW040-N",
+                "GW020-N"
+            ]
+        },
+        {
+            "versionName": "2.3.1",
+            "supportedModels": [
+                "EW12ST",
+                "EW30SX",
+                "EW12SX",
+                "GW240-H",
+                "GW020-H",
+                "GW040-H",
+                "GW040-N",
+                "GW020-N"
+            ]
+        },
+        {
+            "versionName": "2.3.2",
+            "supportedModels": [
+                "EW12ST",
+                "EW30SX",
+                "EW302S",
+                "EW12SX",
+                "GW240-H",
+                "GW020-H",
+                "GW040-H",
+                "GW040-N",
+                "GW020-N"
+            ]
+        },
+        {
+            "versionName": "2.3.3",
+            "supportedModels": [
+                "EW12ST",
+                "EW30SX",
+                "EW302S",
+                "EW12SX",
+                "W520CE",
+                "GW240-H",
+                "GW020-H",
+                "GW040-H",
+                "GW040-N",
+                "GW040-HS",
+                "GW020-N"
+            ]
+        },
+        {
+            "versionName": "2.3.4",
+            "supportedModels": [
+                "EW12ST",
+                "EW30SX",
+                "EW302S",
+                "EW12SX",
+                "W520CE",
+                "GW240-H",
+                "GW020-H",
+                "GW040-H",
+                "GW040-N",
+                "GW040-HS",
+                "GW040-NS",
+                "GW020-N"
+            ]
+        },
+        {
+            "versionName": "2.4.0",
+            "supportedModels": [
+                "EW12ST",
+                "EW30SX",
+                "EW302S",
+                "EW12SX",
+                "W520CE",
+                "EW303S",
+                "GW240-H",
+                "GW020-H",
+                "GW040-H",
+                "GW040-N",
+                "GW040-HS",
+                "GW040-NS",
+                "GW020-N",
+                "GW040P",
+                "XSW240-N"
+            ],
+            "modelSupport160MHz": [
+                "EW30SX",
+                "EW302S",
+                "EW303S"
+            ]
+        },
+        {
+            "versionName": "2.4.1",
+            "supportedModels": [
+                "EW12ST",
+                "EW30SX",
+                "EW302S",
+                "EW12SX",
+                "W520CE",
+                "EW303S",
+                "GW240-H",
+                "GW020-H",
+                "GW040-H",
+                "GW040-N",
+                "GW040-HS",
+                "GW040-NS",
+                "GW020-N",
+                "GW040P",
+                "XSW240-N",
+                "XSW050-N",
+                "XSW250-N",
+                "XSW250-NS",
+                "XSW050-NS"
+            ],
+            "modelSupport160MHz": [
+                "EW30SX",
+                "EW302S",
+                "EW303S"
+            ],
+            "modelSupportVoice": [
+                "GW240-H",
+                "XSW240-N",
+                "XSW250-N",
+                "XSW250-NS"
+            ]
+        },
+        {
+            "versionName": "2.4.2",
+            "supportedModels": [
+                "EW12ST",
+                "EW30SX",
+                "EW302S",
+                "EW12SX",
+                "W520CE",
+                "EW303S",
+                "EW304S",
+                "GW240-H",
+                "GW020-H",
+                "GW040-H",
+                "GW040-N",
+                "GW040-HS",
+                "GW040-NS",
+                "GW020-N",
+                "GW040P",
+                "GW240-NS",
+                "XSW240-N",
+                "XSW050-N",
+                "XSW250-N",
+                "XSW250-NS",
+                "XSW050-NS"
+            ],
+            "modelSupport160MHz": [
+                "EW30SX",
+                "EW302S",
+                "EW303S",
+                "EW304S",
+                "XSW050-NS",
+                "XSW250-NS",
+                "GW040-NS"
+            ],
+            "modelSupportVoice": [
+                "GW240-H",
+                "GW240-NS",
+                "XSW240-N",
+                "XSW250-N",
+                "XSW250-NS"
+            ],
+            "modelSupportFingerprinting": [
+                "GW020-H",
+                "GW040-H",
+                "GW040-HS",
+                "GW240-H",
+                "EW302S"
+            ],
+            "modelSupportQoE": [
+                "EW302S"
+            ]
+        },
+        {
+            "versionName": "2.4.3",
+            "supportedModels": [
+                "EW12ST",
+                "EW30SX",
+                "EW302S",
+                "EW12SX",
+                "W520CE",
+                "EW303S",
+                "EW304S",
+                "GW240-H",
+                "GW020-H",
+                "GW040-H",
+                "GW040-N",
+                "GW040-HS",
+                "GW040-NS",
+                "GW020-N",
+                "GW040P",
+                "GW240-NS",
+                "XSW240-N",
+                "XSW050-N",
+                "XSW250-N",
+                "XSW250-NS",
+                "XSW050-NS"
+            ],
+            "modelSupport160MHz": [
+                "EW30SX",
+                "EW302S",
+                "EW303S",
+                "EW304S",
+                "XSW050-NS",
+                "XSW250-NS",
+                "GW040-NS"
+            ],
+            "modelSupportVoice": [
+                "GW240-H",
+                "GW240-NS",
+                "XSW240-N",
+                "XSW250-N",
+                "XSW250-NS"
+            ],
+            "modelSupportFingerprinting": [
+                "GW020-H",
+                "GW040-H",
+                "GW040-HS",
+                "GW240-H",
+                "EW302S"
+            ],
+            "modelSupportQoE": [
+                "EW302S"
+            ]
+        }
+    ]
+}
